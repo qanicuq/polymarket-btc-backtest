@@ -1,0 +1,260 @@
+{
+ "hour": "2026-05-22T16",
+ "run_utc": "2026-10-16T22:32:30+00:00",
+ "errors": [],
+ "windows_on_gamma": 12,
+ "windows_with_winner": 12,
+ "download_mb": 153.6,
+ "download_reconnects": 0,
+ "download_seconds": 4.5,
+ "file_rows": 23922775,
+ "rows_for_tokens": 184837,
+ "read_done_seconds": 7.2,
+ "token_rows_max": 90654,
+ "windows_in_file": 9,
+ "validation_sums": {
+  "windows_with_snapshot_before_start": 0,
+  "pc_events": 182731,
+  "pc_repaired": 282,
+  "ba_missing_or_out_of_range": 45,
+  "snap_pairs": 4,
+  "raw_levels": 390,
+  "raw_exact": 298,
+  "raw_sizediff": 83,
+  "raw_phantom": 107,
+  "rep_levels": 390,
+  "rep_exact": 298,
+  "rep_sizediff": 80,
+  "rep_phantom": 76,
+  "raw_missing": 9,
+  "rep_missing": 12
+ },
+ "tape_sums": {
+  "P0.01": {
+   "trades": 1,
+   "shares": 3076.58,
+   "cost": 30.7658,
+   "fee_all": 2.13207,
+   "payout": 0.0,
+   "pairs": 1,
+   "wins": 0
+  },
+  "P0.02": {
+   "trades": 10,
+   "shares": 5284.249999999999,
+   "cost": 74.9192,
+   "fee_all": 5.161009999999999,
+   "payout": 0.0,
+   "shares_last_60s": 4.9399999999999995,
+   "pairs": 1,
+   "wins": 0
+  }
+ },
+ "grid_sums": {
+  "P0.02_S25_L0": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 39.35,
+   "cost": 0.787,
+   "fee": 0.05399,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.787,
+   "sup_fee": 0.05399,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S25_L0|early(<240s)": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 39.35,
+   "cost": 0.787,
+   "fee": 0.05399,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.787,
+   "sup_fee": 0.05399,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S100_L0": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 39.35,
+   "cost": 0.787,
+   "fee": 0.05399,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.787,
+   "sup_fee": 0.05399,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S100_L0|early(<240s)": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 39.35,
+   "cost": 0.787,
+   "fee": 0.05399,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.787,
+   "sup_fee": 0.05399,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S25_L0.25": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 1250.0,
+   "cost": 25.0,
+   "fee": 1.715,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 25.0,
+   "sup_fee": 1.715,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S25_L0.25|early(<240s)": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 1250.0,
+   "cost": 25.0,
+   "fee": 1.715,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 25.0,
+   "sup_fee": 1.715,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S100_L0.25": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 1514.66,
+   "cost": 30.2932,
+   "fee": 2.07811,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 30.2932,
+   "sup_fee": 2.07811,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S100_L0.25|early(<240s)": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 1514.66,
+   "cost": 30.2932,
+   "fee": 2.07811,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 30.2932,
+   "sup_fee": 2.07811,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S25_L0.5": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 23.54,
+   "cost": 0.4708,
+   "fee": 0.0323,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.4708,
+   "sup_fee": 0.0323,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S25_L0.5|early(<240s)": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 23.54,
+   "cost": 0.4708,
+   "fee": 0.0323,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.4708,
+   "sup_fee": 0.0323,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S100_L0.5": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 23.54,
+   "cost": 0.4708,
+   "fee": 0.0323,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.4708,
+   "sup_fee": 0.0323,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S100_L0.5|early(<240s)": {
+   "entries": 1,
+   "filled": 1,
+   "shares": 23.54,
+   "cost": 0.4708,
+   "fee": 0.0323,
+   "payout": 0.0,
+   "wins": 0,
+   "sup_filled": 1,
+   "sup_cost": 0.4708,
+   "sup_fee": 0.0323,
+   "sup_payout": 0.0,
+   "sup_wins": 0
+  },
+  "P0.02_S25_L1": {
+   "entries": 1,
+   "no_asks": 1
+  },
+  "P0.02_S25_L1|early(<240s)": {
+   "entries": 1,
+   "no_asks": 1
+  },
+  "P0.02_S100_L1": {
+   "entries": 1,
+   "no_asks": 1
+  },
+  "P0.02_S100_L1|early(<240s)": {
+   "entries": 1,
+   "no_asks": 1
+  },
+  "P0.02_S25_L3": {
+   "entries": 1,
+   "no_asks": 1
+  },
+  "P0.02_S25_L3|early(<240s)": {
+   "entries": 1,
+   "no_asks": 1
+  },
+  "P0.02_S100_L3": {
+   "entries": 1,
+   "no_asks": 1
+  },
+  "P0.02_S100_L3|early(<240s)": {
+   "entries": 1,
+   "no_asks": 1
+  }
+ },
+ "fee_rate_bps_on_trades": {
+  "0": 2083
+ },
+ "seconds_total": 7.8,
+ "peak_mem_mb": 1107.1
+}

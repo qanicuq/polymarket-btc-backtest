@@ -1,0 +1,103 @@
+name: Full backtest
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["requests/full"]          # commit a new timestamp to (re)start; finished hours are skipped
+  workflow_run:                       # starts by itself when this repo's own coverage scan finishes
+    workflows: ["Coverage scan"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: full-backtest
+  cancel-in-progress: false
+
+jobs:
+  week:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      max-parallel: 4                 # be polite to the free PMXT archive
+      matrix:
+        week:
+          - {start: "2026-04-01", end: "2026-04-07"}
+          - {start: "2026-04-08", end: "2026-04-14"}
+          - {start: "2026-04-15", end: "2026-04-21"}
+          - {start: "2026-04-22", end: "2026-04-28"}
+          - {start: "2026-04-29", end: "2026-05-05"}
+          - {start: "2026-05-06", end: "2026-05-12"}
+          - {start: "2026-05-13", end: "2026-05-19"}
+          - {start: "2026-05-20", end: "2026-05-26"}
+          - {start: "2026-05-27", end: "2026-06-02"}
+          - {start: "2026-06-03", end: "2026-06-09"}
+          - {start: "2026-06-10", end: "2026-06-16"}
+          - {start: "2026-06-17", end: "2026-06-23"}
+          - {start: "2026-06-24", end: "2026-06-30"}
+          - {start: "2026-07-01", end: "2026-07-07"}
+          - {start: "2026-07-08", end: "2026-07-14"}
+          - {start: "2026-07-15", end: "2026-07-21"}
+          - {start: "2026-07-22", end: "2026-07-28"}
+          - {start: "2026-07-29", end: "2026-08-04"}
+          - {start: "2026-08-05", end: "2026-08-11"}
+          - {start: "2026-08-12", end: "2026-08-18"}
+          - {start: "2026-08-19", end: "2026-08-25"}
+          - {start: "2026-08-26", end: "2026-09-01"}
+          - {start: "2026-09-02", end: "2026-09-08"}
+          - {start: "2026-09-09", end: "2026-09-15"}
+          - {start: "2026-09-16", end: "2026-09-22"}
+          - {start: "2026-09-23", end: "2026-09-29"}
+          - {start: "2026-09-30", end: "2026-10-06"}
+          - {start: "2026-10-07", end: "2026-10-15"}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyarrow
+      - name: Backtest every covered hour of this week
+        timeout-minutes: 345
+        run: |
+          git config user.name "backtest bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python scripts/run_batch.py ${{ matrix.week.start }} ${{ matrix.week.end }} results/full
+
+  summarize:
+    needs: week
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pool all hours
+        run: python scripts/summarize.py results/full | tee /tmp/msg.txt
+      - name: Commit summary
+        run: |
+          git config user.name "backtest bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Full backtest summary"
+          for i in 1 2 3 4 5 6; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
+      - name: Send one ntfy push (topic comes only from the NTFY_TOPIC secret)
+        if: always()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then echo "NTFY_TOPIC secret is not set; skipping"; exit 0; fi
+          MSG="Full backtest finished: $(cat /tmp/msg.txt 2>/dev/null || echo 'no summary')"
+          curl -fsS -H "Title: Polymarket backtest" -d "$MSG" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null

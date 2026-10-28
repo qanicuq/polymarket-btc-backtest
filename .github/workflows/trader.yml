@@ -1,0 +1,35 @@
+name: Trader profile
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["requests/trader"]        # commit a new timestamp to re-run
+
+permissions:
+  contents: write
+
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull the public history of @bigggggggg on Polymarket
+        run: python scripts/trader_profile.py 0x511f9c771449162349795d17becf8b37031acbe1
+      - name: Commit report
+        if: always()
+        run: |
+          git config user.name "trader bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trader
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Trader profile report [skip ci]"
+          for i in 1 2 3 4 5 6; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1

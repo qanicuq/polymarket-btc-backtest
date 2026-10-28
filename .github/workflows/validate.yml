@@ -1,0 +1,82 @@
+name: Validate (8 fixed hours)
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["requests/validate"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: validation
+  cancel-in-progress: false
+
+jobs:
+  hour:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 2              # the coverage scan may be using 4 downloads at the same time
+      matrix:
+        # chosen in advance from the sampled coverage table (all 12 windows present); never swap for better ones
+        hour: ["2026-04-14T14", "2026-04-26T14", "2026-05-08T14", "2026-05-29T14",
+               "2026-06-07T14", "2026-07-19T14", "2026-07-31T14", "2026-08-09T14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyarrow
+      - name: Backtest this hour
+        timeout-minutes: 50
+        run: python scripts/backtest.py ${{ matrix.hour }} results/validation
+      - name: Commit results (also after a failure)
+        if: always()
+        run: |
+          git config user.name "backtest bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Validation results ${{ matrix.hour }}"
+          for i in 1 2 3 4 5 6; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
+
+  summarize:
+    needs: hour
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pool the hours
+        run: python scripts/summarize.py results/validation | tee /tmp/msg.txt
+      - name: Commit summary
+        run: |
+          git config user.name "backtest bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Validation summary"
+          for i in 1 2 3 4 5 6; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
+      - name: Send one ntfy push (topic comes only from the NTFY_TOPIC secret)
+        if: always()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then echo "NTFY_TOPIC secret is not set; skipping"; exit 0; fi
+          MSG="Validation run finished: $(cat /tmp/msg.txt 2>/dev/null || echo 'no summary')"
+          curl -fsS -H "Title: Polymarket backtest" -d "$MSG" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null

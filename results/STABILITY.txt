@@ -1,0 +1,117 @@
+# Stability check: results/full
+
+## 2c, $100, delay 0.25s, all trigger times
+- all:         fills  23804  wins  527  cost $   388719  P&L with fee $   432193 (+111%)
+- 2026-04:     fills   4406  wins  127  cost $    82502  P&L with fee $   342960 (+416%)
+- 2026-05:     fills   7608  wins  217  cost $   146752  P&L with fee $   146165 (+100%)
+- 2026-06:     fills   3157  wins   56  cost $    55441  P&L with fee $   -12958 (-23%)
+- 2026-07:     fills   6243  wins   90  cost $    78576  P&L with fee $   -36970 (-47%)
+- 2026-08:     fills   2390  wins   37  cost $    25448  P&L with fee $    -7005 (-28%)
+- 1st half:    fills  12014  wins  344  cost $   229254  P&L with fee $   489126 (+213%)
+- 2nd half:    fills  11790  wins  183  cost $   159465  P&L with fee $   -56933 (-36%)
+- 2026-04-21..2026-05-04: fills   3556  wins  220  cost $    58994  P&L with fee $   531757 (+901%)
+- all other days: fills  20248  wins  307  cost $   329726  P&L with fee $   -99565 (-30%)
+- weeks profitable with fee: 4/16
+- 95% range of ROI with fee, resampling days: +20% to +226%
+
+## 2c, $100, delay 0.5s, all trigger times
+- all:         fills  22764  wins  406  cost $   443021  P&L with fee $   107654 (+24%)
+- 2026-04:     fills   4126  wins   88  cost $    91463  P&L with fee $   142981 (+156%)
+- 2026-05:     fills   7217  wins  152  cost $   167235  P&L with fee $    40420 (+24%)
+- 2026-06:     fills   3096  wins   53  cost $    60485  P&L with fee $   -19122 (-32%)
+- 2026-07:     fills   6007  wins   78  cost $    93323  P&L with fee $   -46513 (-50%)
+- 2026-08:     fills   2318  wins   35  cost $    30515  P&L with fee $   -10113 (-33%)
+- 1st half:    fills  11343  wins  240  cost $   258698  P&L with fee $   183402 (+71%)
+- 2nd half:    fills  11421  wins  166  cost $   184323  P&L with fee $   -75747 (-41%)
+- 2026-04-21..2026-05-04: fills   3185  wins  132  cost $    59072  P&L with fee $   269237 (+456%)
+- all other days: fills  19579  wins  274  cost $   383949  P&L with fee $  -161583 (-42%)
+- weeks profitable with fee: 3/16
+- 95% range of ROI with fee, resampling days: -16% to +75%
+
+## 2c, $100, delay 0.5s, last 15 s only
+- all:         fills   7441  wins  167  cost $   145137  P&L with fee $   210172 (+145%)
+- 2026-04:     fills   1746  wins   51  cost $    48338  P&L with fee $   154803 (+320%)
+- 2026-05:     fills   2137  wins   80  cost $    39273  P&L with fee $    94138 (+240%)
+- 2026-06:     fills    799  wins    6  cost $    12705  P&L with fee $   -10872 (-86%)
+- 2026-07:     fills   2040  wins   21  cost $    32403  P&L with fee $   -20522 (-63%)
+- 2026-08:     fills    719  wins    9  cost $    12418  P&L with fee $    -7375 (-59%)
+- 1st half:    fills   3883  wins  131  cost $    87611  P&L with fee $   248941 (+284%)
+- 2nd half:    fills   3558  wins   36  cost $    57526  P&L with fee $   -38769 (-67%)
+- 2026-04-21..2026-05-04: fills   1204  wins  104  cost $    29739  P&L with fee $   282101 (+949%)
+- all other days: fills   6237  wins   63  cost $   115398  P&L with fee $   -71929 (-62%)
+- weeks profitable with fee: 4/16
+- 95% range of ROI with fee, resampling days: +28% to +292%
+
+## 2c, $25, delay 0.5s, last 15 s only
+- all:         fills   7441  wins  167  cost $    81203  P&L with fee $    88935 (+110%)
+- 2026-04:     fills   1746  wins   51  cost $    24700  P&L with fee $    53298 (+216%)
+- 2026-05:     fills   2137  wins   80  cost $    22808  P&L with fee $    55201 (+242%)
+- 2026-06:     fills    799  wins    6  cost $     8486  P&L with fee $    -6362 (-75%)
+- 2026-07:     fills   2040  wins   21  cost $    18472  P&L with fee $   -10723 (-58%)
+- 2026-08:     fills    719  wins    9  cost $     6736  P&L with fee $    -2479 (-37%)
+- 1st half:    fills   3883  wins  131  cost $    47508  P&L with fee $   108499 (+228%)
+- 2nd half:    fills   3558  wins   36  cost $    33694  P&L with fee $   -19564 (-58%)
+- 2026-04-21..2026-05-04: fills   1204  wins  104  cost $    15022  P&L with fee $   126164 (+840%)
+- all other days: fills   6237  wins   63  cost $    66181  P&L with fee $   -37229 (-56%)
+- weeks profitable with fee: 3/16
+- 95% range of ROI with fee, resampling days: +5% to +241%
+
+## 2c, $100, delay 1s, last 15 s only
+- all:         fills   6734  wins  109  cost $   190294  P&L with fee $    11111 (+6%)
+- 2026-04:     fills   1584  wins   28  cost $    60362  P&L with fee $     8732 (+14%)
+- 2026-05:     fills   1912  wins   51  cost $    50816  P&L with fee $    52533 (+103%)
+- 2026-06:     fills    749  wins    5  cost $    18249  P&L with fee $   -12244 (-67%)
+- 2026-07:     fills   1841  wins   18  cost $    46268  P&L with fee $   -25315 (-55%)
+- 2026-08:     fills    648  wins    7  cost $    14599  P&L with fee $   -12595 (-86%)
+- 1st half:    fills   3431  wins   78  cost $   109617  P&L with fee $    62898 (+57%)
+- 2nd half:    fills   3303  wins   31  cost $    80676  P&L with fee $   -51787 (-64%)
+- 2026-04-21..2026-05-04: fills   1064  wins   59  cost $    31786  P&L with fee $   138624 (+436%)
+- all other days: fills   5670  wins   50  cost $   158508  P&L with fee $  -127514 (-80%)
+- weeks profitable with fee: 1/15
+- 95% range of ROI with fee, resampling days: -59% to +100%
+
+## 1c, $100, delay 0.25s, all trigger times
+- all:         fills  23949  wins  328  cost $  1080317  P&L with fee $    25878 (+2%)
+- 2026-04:     fills   4477  wins  103  cost $   256616  P&L with fee $   292417 (+114%)
+- 2026-05:     fills   7653  wins  148  cost $   267238  P&L with fee $    46005 (+17%)
+- 2026-06:     fills   3132  wins   21  cost $   117150  P&L with fee $   -85949 (-73%)
+- 2026-07:     fills   6280  wins   36  cost $   359844  P&L with fee $  -206007 (-57%)
+- 2026-08:     fills   2407  wins   20  cost $    79469  P&L with fee $   -20588 (-26%)
+- 1st half:    fills  12130  wins  251  cost $   523854  P&L with fee $   338422 (+65%)
+- 2nd half:    fills  11819  wins   77  cost $   556463  P&L with fee $  -312544 (-56%)
+- 2026-04-21..2026-05-04: fills   3601  wins  203  cost $   149993  P&L with fee $   528685 (+352%)
+- all other days: fills  20348  wins  125  cost $   930324  P&L with fee $  -502807 (-54%)
+- weeks profitable with fee: 2/16
+- 95% range of ROI with fee, resampling days: -35% to +49%
+
+## 1c, $100, delay 0.25s, last 15 s only
+- all:         fills  11418  wins  238  cost $   567022  P&L with fee $   207419 (+37%)
+- 2026-04:     fills   2532  wins   86  cost $   160652  P&L with fee $   284689 (+177%)
+- 2026-05:     fills   3585  wins  126  cost $   138775  P&L with fee $   118853 (+86%)
+- 2026-06:     fills   1145  wins    4  cost $    53525  P&L with fee $   -46460 (-87%)
+- 2026-07:     fills   3120  wins   17  cost $   172342  P&L with fee $  -117426 (-68%)
+- 2026-08:     fills   1036  wins    5  cost $    41727  P&L with fee $   -32236 (-77%)
+- 1st half:    fills   6117  wins  212  cost $   299427  P&L with fee $   403542 (+135%)
+- 2nd half:    fills   5301  wins   26  cost $   267595  P&L with fee $  -196123 (-73%)
+- 2026-04-21..2026-05-04: fills   1976  wins  192  cost $    91326  P&L with fee $   543339 (+595%)
+- all other days: fills   9442  wins   46  cost $   475695  P&L with fee $  -335920 (-71%)
+- weeks profitable with fee: 2/16
+- 95% range of ROI with fee, resampling days: -34% to +120%
+
+## Tape (every real trade at <= 1c), win rate by week
+- week of 2026-04-13:  1647 token-windows, win rate  1.2%
+- week of 2026-04-20:  2002 token-windows, win rate  5.0%
+- week of 2026-04-27:  2225 token-windows, win rate 16.8%
+- week of 2026-05-04:  1966 token-windows, win rate  3.3%
+- week of 2026-05-11:  1876 token-windows, win rate  1.6%
+- week of 2026-05-18:  1472 token-windows, win rate  1.4%
+- week of 2026-05-25:  1883 token-windows, win rate  1.4%
+- week of 2026-06-01:  1831 token-windows, win rate  1.4%
+- week of 2026-06-08:  1025 token-windows, win rate  1.8%
+- week of 2026-06-29:  1601 token-windows, win rate  1.2%
+- week of 2026-07-06:   785 token-windows, win rate  0.8%
+- week of 2026-07-13:  1145 token-windows, win rate  1.5%
+- week of 2026-07-20:  1882 token-windows, win rate  1.3%
+- week of 2026-07-27:  1841 token-windows, win rate  1.3%
+- week of 2026-08-03:  1916 token-windows, win rate  1.3%
+- week of 2026-08-10:     9 token-windows, win rate 11.1%

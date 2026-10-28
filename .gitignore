@@ -1,0 +1,14 @@
+# Raw archive files are downloaded inside Actions only, never committed
+*.parquet
+
+# Secrets - never commit (this repo is PUBLIC)
+.env
+*.env
+*secret*
+*key*.json
+
+# Python / OS junk
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

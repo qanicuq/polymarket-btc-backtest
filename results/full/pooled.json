@@ -1,0 +1,1654 @@
+{
+ "hours": 2222,
+ "hours_with_errors": 0,
+ "windows_in_file": 26501,
+ "fee_rate_bps_on_trades": {
+  "1000": 14967208,
+  "0": 54159421
+ },
+ "validation": {
+  "snapshot_pairs": 68321460,
+  "level_agreement_pct_unanchored": 93.9,
+  "level_agreement_pct_anchored": 93.9,
+  "phantom_levels_unanchored": 367083659,
+  "phantom_levels_anchored": 368275485,
+  "price_change_events": 6844138203,
+  "pct_events_needing_repair": 0.7,
+  "rows_with_bad_best_ask": 101330055,
+  "windows_with_snapshot_before_start": 32872
+ },
+ "tape": {
+  "P0.01": {
+   "trades": 520707,
+   "pairs": 25106,
+   "wins": 793,
+   "win_rate_pct": 3.2,
+   "win_rate_95pct_ci": [
+    2.95,
+    3.38
+   ],
+   "cost": 1210479.94,
+   "payout": 3308953.87,
+   "roi_gross_pct": 173.4,
+   "roi_with_fee_pct": 155.6,
+   "pct_shares_in_last_60s": 79.3
+  },
+  "P0.02": {
+   "trades": 885375,
+   "pairs": 25782,
+   "wins": 1005,
+   "win_rate_pct": 3.9,
+   "win_rate_95pct_ci": [
+    3.67,
+    4.14
+   ],
+   "cost": 1996464.36,
+   "payout": 4277390.35,
+   "roi_gross_pct": 114.2,
+   "roi_with_fee_pct": 100.4,
+   "pct_shares_in_last_60s": 74.1
+  }
+ },
+ "grid": {
+  "P0.01_S100_L0": {
+   "entries": 25062,
+   "filled": 24587,
+   "unknown_size": 25,
+   "no_asks": 450,
+   "too_late": 0,
+   "wins": 643,
+   "win_rate_95pct_ci": [
+    2.42,
+    2.82
+   ],
+   "cost": 323829.39,
+   "payout": 1234583.98,
+   "pnl_gross": 910754.59,
+   "pnl_with_fee": 888313.18,
+   "roi_gross_pct": 281.2,
+   "supported_filled": 24587,
+   "supported_wins": 643,
+   "supported_pnl_with_fee": 888313.18
+  },
+  "P0.01_S100_L0.25": {
+   "entries": 25062,
+   "filled": 23949,
+   "unknown_size": 4,
+   "no_asks": 863,
+   "too_late": 246,
+   "wins": 328,
+   "win_rate_95pct_ci": [
+    1.23,
+    1.52
+   ],
+   "cost": 1080317.19,
+   "payout": 1181061.52,
+   "pnl_gross": 100744.33,
+   "pnl_with_fee": 25878.28,
+   "roi_gross_pct": 9.3,
+   "supported_filled": 23949,
+   "supported_wins": 328,
+   "supported_pnl_with_fee": 25878.28
+  },
+  "P0.01_S100_L0.25|early(<240s)": {
+   "entries": 4194,
+   "filled": 4155,
+   "unknown_size": 0,
+   "no_asks": 39,
+   "too_late": 0,
+   "wins": 25,
+   "win_rate_95pct_ci": [
+    0.41,
+    0.89
+   ],
+   "cost": 172838.99,
+   "payout": 94307.58,
+   "pnl_gross": -78531.41,
+   "pnl_with_fee": -90509.16,
+   "roi_gross_pct": -45.4,
+   "supported_filled": 4155,
+   "supported_wins": 25,
+   "supported_pnl_with_fee": -90509.16
+  },
+  "P0.01_S100_L0.25|last15s": {
+   "entries": 12413,
+   "filled": 11418,
+   "unknown_size": 4,
+   "no_asks": 745,
+   "too_late": 246,
+   "wins": 238,
+   "win_rate_95pct_ci": [
+    1.84,
+    2.36
+   ],
+   "cost": 567021.6,
+   "payout": 813735.36,
+   "pnl_gross": 246713.76,
+   "pnl_with_fee": 207419.14,
+   "roi_gross_pct": 43.5,
+   "supported_filled": 11418,
+   "supported_wins": 238,
+   "supported_pnl_with_fee": 207419.14
+  },
+  "P0.01_S100_L0.25|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8376,
+   "unknown_size": 0,
+   "no_asks": 79,
+   "too_late": 0,
+   "wins": 65,
+   "win_rate_95pct_ci": [
+    0.61,
+    0.99
+   ],
+   "cost": 340456.6,
+   "payout": 273018.58,
+   "pnl_gross": -67438.02,
+   "pnl_with_fee": -91031.7,
+   "roi_gross_pct": -19.8,
+   "supported_filled": 8376,
+   "supported_wins": 65,
+   "supported_pnl_with_fee": -91031.7
+  },
+  "P0.01_S100_L0.5": {
+   "entries": 25062,
+   "filled": 22915,
+   "unknown_size": 2,
+   "no_asks": 1587,
+   "too_late": 558,
+   "wins": 225,
+   "win_rate_95pct_ci": [
+    0.86,
+    1.12
+   ],
+   "cost": 1134723.45,
+   "payout": 857401.0,
+   "pnl_gross": -277322.45,
+   "pnl_with_fee": -355958.87,
+   "roi_gross_pct": -24.4,
+   "supported_filled": 22915,
+   "supported_wins": 225,
+   "supported_pnl_with_fee": -355958.87
+  },
+  "P0.01_S100_L0.5|early(<240s)": {
+   "entries": 4194,
+   "filled": 4100,
+   "unknown_size": 1,
+   "no_asks": 93,
+   "too_late": 0,
+   "wins": 24,
+   "win_rate_95pct_ci": [
+    0.39,
+    0.87
+   ],
+   "cost": 189693.56,
+   "payout": 93976.54,
+   "pnl_gross": -95717.02,
+   "pnl_with_fee": -108862.8,
+   "roi_gross_pct": -50.5,
+   "supported_filled": 4100,
+   "supported_wins": 24,
+   "supported_pnl_with_fee": -108862.8
+  },
+  "P0.01_S100_L0.5|last15s": {
+   "entries": 12413,
+   "filled": 10622,
+   "unknown_size": 1,
+   "no_asks": 1232,
+   "too_late": 558,
+   "wins": 139,
+   "win_rate_95pct_ci": [
+    1.11,
+    1.54
+   ],
+   "cost": 592031.08,
+   "payout": 495925.57,
+   "pnl_gross": -96105.51,
+   "pnl_with_fee": -137133.31,
+   "roi_gross_pct": -16.2,
+   "supported_filled": 10622,
+   "supported_wins": 139,
+   "supported_pnl_with_fee": -137133.31
+  },
+  "P0.01_S100_L0.5|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8193,
+   "unknown_size": 0,
+   "no_asks": 262,
+   "too_late": 0,
+   "wins": 62,
+   "win_rate_95pct_ci": [
+    0.59,
+    0.97
+   ],
+   "cost": 352998.8,
+   "payout": 267498.89,
+   "pnl_gross": -85499.91,
+   "pnl_with_fee": -109962.77,
+   "roi_gross_pct": -24.2,
+   "supported_filled": 8193,
+   "supported_wins": 62,
+   "supported_pnl_with_fee": -109962.77
+  },
+  "P0.01_S100_L0|early(<240s)": {
+   "entries": 4194,
+   "filled": 4127,
+   "unknown_size": 7,
+   "no_asks": 60,
+   "too_late": 0,
+   "wins": 27,
+   "win_rate_95pct_ci": [
+    0.45,
+    0.95
+   ],
+   "cost": 62824.9,
+   "payout": 50736.18,
+   "pnl_gross": -12088.72,
+   "pnl_with_fee": -16442.49,
+   "roi_gross_pct": -19.2,
+   "supported_filled": 4127,
+   "supported_wins": 27,
+   "supported_pnl_with_fee": -16442.49
+  },
+  "P0.01_S100_L0|last15s": {
+   "entries": 12413,
+   "filled": 12167,
+   "unknown_size": 9,
+   "no_asks": 237,
+   "too_late": 0,
+   "wins": 548,
+   "win_rate_95pct_ci": [
+    4.15,
+    4.89
+   ],
+   "cost": 151247.95,
+   "payout": 1100706.73,
+   "pnl_gross": 949458.78,
+   "pnl_with_fee": 938977.28,
+   "roi_gross_pct": 627.7,
+   "supported_filled": 12167,
+   "supported_wins": 548,
+   "supported_pnl_with_fee": 938977.28
+  },
+  "P0.01_S100_L0|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8293,
+   "unknown_size": 9,
+   "no_asks": 153,
+   "too_late": 0,
+   "wins": 68,
+   "win_rate_95pct_ci": [
+    0.65,
+    1.04
+   ],
+   "cost": 109756.54,
+   "payout": 83141.07,
+   "pnl_gross": -26615.47,
+   "pnl_with_fee": -34221.61,
+   "roi_gross_pct": -24.2,
+   "supported_filled": 8293,
+   "supported_wins": 68,
+   "supported_pnl_with_fee": -34221.61
+  },
+  "P0.01_S100_L1": {
+   "entries": 25062,
+   "filled": 21444,
+   "unknown_size": 1,
+   "no_asks": 1752,
+   "too_late": 1865,
+   "wins": 161,
+   "win_rate_95pct_ci": [
+    0.64,
+    0.88
+   ],
+   "cost": 1146983.1,
+   "payout": 647737.09,
+   "pnl_gross": -499246.01,
+   "pnl_with_fee": -578732.15,
+   "roi_gross_pct": -43.5,
+   "supported_filled": 21444,
+   "supported_wins": 161,
+   "supported_pnl_with_fee": -578732.15
+  },
+  "P0.01_S100_L1|early(<240s)": {
+   "entries": 4194,
+   "filled": 4069,
+   "unknown_size": 0,
+   "no_asks": 125,
+   "too_late": 0,
+   "wins": 25,
+   "win_rate_95pct_ci": [
+    0.42,
+    0.91
+   ],
+   "cost": 207074.65,
+   "payout": 94926.75,
+   "pnl_gross": -112147.9,
+   "pnl_with_fee": -126498.19,
+   "roi_gross_pct": -54.2,
+   "supported_filled": 4069,
+   "supported_wins": 25,
+   "supported_pnl_with_fee": -126498.19
+  },
+  "P0.01_S100_L1|last15s": {
+   "entries": 12413,
+   "filled": 9328,
+   "unknown_size": 1,
+   "no_asks": 1219,
+   "too_late": 1865,
+   "wins": 79,
+   "win_rate_95pct_ci": [
+    0.68,
+    1.05
+   ],
+   "cost": 574623.83,
+   "payout": 289891.5,
+   "pnl_gross": -284732.33,
+   "pnl_with_fee": -324553.92,
+   "roi_gross_pct": -49.6,
+   "supported_filled": 9328,
+   "supported_wins": 79,
+   "supported_pnl_with_fee": -324553.92
+  },
+  "P0.01_S100_L1|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8047,
+   "unknown_size": 0,
+   "no_asks": 408,
+   "too_late": 0,
+   "wins": 57,
+   "win_rate_95pct_ci": [
+    0.55,
+    0.92
+   ],
+   "cost": 365284.62,
+   "payout": 262918.84,
+   "pnl_gross": -102365.78,
+   "pnl_with_fee": -127680.04,
+   "roi_gross_pct": -28.0,
+   "supported_filled": 8047,
+   "supported_wins": 57,
+   "supported_pnl_with_fee": -127680.04
+  },
+  "P0.01_S100_L3": {
+   "entries": 25062,
+   "filled": 18047,
+   "unknown_size": 3,
+   "no_asks": 1878,
+   "too_late": 5134,
+   "wins": 98,
+   "win_rate_95pct_ci": [
+    0.45,
+    0.66
+   ],
+   "cost": 1065192.62,
+   "payout": 434919.71,
+   "pnl_gross": -630272.91,
+   "pnl_with_fee": -704091.01,
+   "roi_gross_pct": -59.2,
+   "supported_filled": 18047,
+   "supported_wins": 98,
+   "supported_pnl_with_fee": -704091.01
+  },
+  "P0.01_S100_L3|early(<240s)": {
+   "entries": 4194,
+   "filled": 3938,
+   "unknown_size": 0,
+   "no_asks": 256,
+   "too_late": 0,
+   "wins": 20,
+   "win_rate_95pct_ci": [
+    0.33,
+    0.78
+   ],
+   "cost": 227065.68,
+   "payout": 92741.4,
+   "pnl_gross": -134324.28,
+   "pnl_with_fee": -150059.96,
+   "roi_gross_pct": -59.2,
+   "supported_filled": 3938,
+   "supported_wins": 20,
+   "supported_pnl_with_fee": -150059.96
+  },
+  "P0.01_S100_L3|last15s": {
+   "entries": 12413,
+   "filled": 6174,
+   "unknown_size": 3,
+   "no_asks": 1102,
+   "too_late": 5134,
+   "wins": 25,
+   "win_rate_95pct_ci": [
+    0.27,
+    0.6
+   ],
+   "cost": 434986.8,
+   "payout": 106884.82,
+   "pnl_gross": -328101.98,
+   "pnl_with_fee": -358246.72,
+   "roi_gross_pct": -75.4,
+   "supported_filled": 6174,
+   "supported_wins": 25,
+   "supported_pnl_with_fee": -358246.72
+  },
+  "P0.01_S100_L3|late(240-285s)": {
+   "entries": 8455,
+   "filled": 7935,
+   "unknown_size": 0,
+   "no_asks": 520,
+   "too_late": 0,
+   "wins": 53,
+   "win_rate_95pct_ci": [
+    0.51,
+    0.87
+   ],
+   "cost": 403140.14,
+   "payout": 235293.49,
+   "pnl_gross": -167846.65,
+   "pnl_with_fee": -195784.33,
+   "roi_gross_pct": -41.6,
+   "supported_filled": 7935,
+   "supported_wins": 53,
+   "supported_pnl_with_fee": -195784.33
+  },
+  "P0.01_S25_L0": {
+   "entries": 25062,
+   "filled": 24587,
+   "unknown_size": 25,
+   "no_asks": 450,
+   "too_late": 0,
+   "wins": 643,
+   "win_rate_95pct_ci": [
+    2.42,
+    2.82
+   ],
+   "cost": 224246.17,
+   "payout": 683930.4,
+   "pnl_gross": 459684.23,
+   "pnl_with_fee": 444143.94,
+   "roi_gross_pct": 205.0,
+   "supported_filled": 24587,
+   "supported_wins": 643,
+   "supported_pnl_with_fee": 444143.94
+  },
+  "P0.01_S25_L0.25": {
+   "entries": 25062,
+   "filled": 23949,
+   "unknown_size": 4,
+   "no_asks": 863,
+   "too_late": 246,
+   "wins": 328,
+   "win_rate_95pct_ci": [
+    1.23,
+    1.52
+   ],
+   "cost": 475582.01,
+   "payout": 551352.86,
+   "pnl_gross": 75770.85,
+   "pnl_with_fee": 42812.96,
+   "roi_gross_pct": 15.9,
+   "supported_filled": 23949,
+   "supported_wins": 328,
+   "supported_pnl_with_fee": 42812.96
+  },
+  "P0.01_S25_L0.25|early(<240s)": {
+   "entries": 4194,
+   "filled": 4155,
+   "unknown_size": 0,
+   "no_asks": 39,
+   "too_late": 0,
+   "wins": 25,
+   "win_rate_95pct_ci": [
+    0.41,
+    0.89
+   ],
+   "cost": 82518.79,
+   "payout": 46181.99,
+   "pnl_gross": -36336.8,
+   "pnl_with_fee": -42055.36,
+   "roi_gross_pct": -44.0,
+   "supported_filled": 4155,
+   "supported_wins": 25,
+   "supported_pnl_with_fee": -42055.36
+  },
+  "P0.01_S25_L0.25|last15s": {
+   "entries": 12413,
+   "filled": 11418,
+   "unknown_size": 4,
+   "no_asks": 745,
+   "too_late": 246,
+   "wins": 238,
+   "win_rate_95pct_ci": [
+    1.84,
+    2.36
+   ],
+   "cost": 231415.73,
+   "payout": 378693.74,
+   "pnl_gross": 147278.01,
+   "pnl_with_fee": 131240.88,
+   "roi_gross_pct": 63.6,
+   "supported_filled": 11418,
+   "supported_wins": 238,
+   "supported_pnl_with_fee": 131240.88
+  },
+  "P0.01_S25_L0.25|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8376,
+   "unknown_size": 0,
+   "no_asks": 79,
+   "too_late": 0,
+   "wins": 65,
+   "win_rate_95pct_ci": [
+    0.61,
+    0.99
+   ],
+   "cost": 161647.48,
+   "payout": 126477.13,
+   "pnl_gross": -35170.35,
+   "pnl_with_fee": -46372.55,
+   "roi_gross_pct": -21.8,
+   "supported_filled": 8376,
+   "supported_wins": 65,
+   "supported_pnl_with_fee": -46372.55
+  },
+  "P0.01_S25_L0.5": {
+   "entries": 25062,
+   "filled": 22915,
+   "unknown_size": 2,
+   "no_asks": 1587,
+   "too_late": 558,
+   "wins": 225,
+   "win_rate_95pct_ci": [
+    0.86,
+    1.12
+   ],
+   "cost": 471859.28,
+   "payout": 389732.96,
+   "pnl_gross": -82126.32,
+   "pnl_with_fee": -114826.26,
+   "roi_gross_pct": -17.4,
+   "supported_filled": 22915,
+   "supported_wins": 225,
+   "supported_pnl_with_fee": -114826.26
+  },
+  "P0.01_S25_L0.5|early(<240s)": {
+   "entries": 4194,
+   "filled": 4100,
+   "unknown_size": 1,
+   "no_asks": 93,
+   "too_late": 0,
+   "wins": 24,
+   "win_rate_95pct_ci": [
+    0.39,
+    0.87
+   ],
+   "cost": 84895.96,
+   "payout": 45655.35,
+   "pnl_gross": -39240.61,
+   "pnl_with_fee": -45123.91,
+   "roi_gross_pct": -46.2,
+   "supported_filled": 4100,
+   "supported_wins": 24,
+   "supported_pnl_with_fee": -45123.91
+  },
+  "P0.01_S25_L0.5|last15s": {
+   "entries": 12413,
+   "filled": 10622,
+   "unknown_size": 1,
+   "no_asks": 1232,
+   "too_late": 558,
+   "wins": 139,
+   "win_rate_95pct_ci": [
+    1.11,
+    1.54
+   ],
+   "cost": 223843.48,
+   "payout": 222293.13,
+   "pnl_gross": -1550.35,
+   "pnl_with_fee": -17062.74,
+   "roi_gross_pct": -0.7,
+   "supported_filled": 10622,
+   "supported_wins": 139,
+   "supported_pnl_with_fee": -17062.74
+  },
+  "P0.01_S25_L0.5|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8193,
+   "unknown_size": 0,
+   "no_asks": 262,
+   "too_late": 0,
+   "wins": 62,
+   "win_rate_95pct_ci": [
+    0.59,
+    0.97
+   ],
+   "cost": 163119.84,
+   "payout": 121784.48,
+   "pnl_gross": -41335.37,
+   "pnl_with_fee": -52639.6,
+   "roi_gross_pct": -25.3,
+   "supported_filled": 8193,
+   "supported_wins": 62,
+   "supported_pnl_with_fee": -52639.6
+  },
+  "P0.01_S25_L0|early(<240s)": {
+   "entries": 4194,
+   "filled": 4127,
+   "unknown_size": 7,
+   "no_asks": 60,
+   "too_late": 0,
+   "wins": 27,
+   "win_rate_95pct_ci": [
+    0.45,
+    0.95
+   ],
+   "cost": 44474.79,
+   "payout": 32001.83,
+   "pnl_gross": -12472.96,
+   "pnl_with_fee": -15555.07,
+   "roi_gross_pct": -28.0,
+   "supported_filled": 4127,
+   "supported_wins": 27,
+   "supported_pnl_with_fee": -15555.07
+  },
+  "P0.01_S25_L0|last15s": {
+   "entries": 12413,
+   "filled": 12167,
+   "unknown_size": 9,
+   "no_asks": 237,
+   "too_late": 0,
+   "wins": 548,
+   "win_rate_95pct_ci": [
+    4.15,
+    4.89
+   ],
+   "cost": 99837.7,
+   "payout": 586472.62,
+   "pnl_gross": 486634.92,
+   "pnl_with_fee": 479716.16,
+   "roi_gross_pct": 487.4,
+   "supported_filled": 12167,
+   "supported_wins": 548,
+   "supported_pnl_with_fee": 479716.16
+  },
+  "P0.01_S25_L0|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8293,
+   "unknown_size": 9,
+   "no_asks": 153,
+   "too_late": 0,
+   "wins": 68,
+   "win_rate_95pct_ci": [
+    0.65,
+    1.04
+   ],
+   "cost": 79933.69,
+   "payout": 65455.95,
+   "pnl_gross": -14477.74,
+   "pnl_with_fee": -20017.15,
+   "roi_gross_pct": -18.1,
+   "supported_filled": 8293,
+   "supported_wins": 68,
+   "supported_pnl_with_fee": -20017.15
+  },
+  "P0.01_S25_L1": {
+   "entries": 25062,
+   "filled": 21444,
+   "unknown_size": 1,
+   "no_asks": 1752,
+   "too_late": 1865,
+   "wins": 161,
+   "win_rate_95pct_ci": [
+    0.64,
+    0.88
+   ],
+   "cost": 452952.58,
+   "payout": 299407.46,
+   "pnl_gross": -153545.12,
+   "pnl_with_fee": -184934.89,
+   "roi_gross_pct": -33.9,
+   "supported_filled": 21444,
+   "supported_wins": 161,
+   "supported_pnl_with_fee": -184934.89
+  },
+  "P0.01_S25_L1|early(<240s)": {
+   "entries": 4194,
+   "filled": 4069,
+   "unknown_size": 0,
+   "no_asks": 125,
+   "too_late": 0,
+   "wins": 25,
+   "win_rate_95pct_ci": [
+    0.42,
+    0.91
+   ],
+   "cost": 87393.55,
+   "payout": 47495.94,
+   "pnl_gross": -39897.61,
+   "pnl_with_fee": -45953.99,
+   "roi_gross_pct": -45.7,
+   "supported_filled": 4069,
+   "supported_wins": 25,
+   "supported_pnl_with_fee": -45953.99
+  },
+  "P0.01_S25_L1|last15s": {
+   "entries": 12413,
+   "filled": 9328,
+   "unknown_size": 1,
+   "no_asks": 1219,
+   "too_late": 1865,
+   "wins": 79,
+   "win_rate_95pct_ci": [
+    0.68,
+    1.05
+   ],
+   "cost": 202450.59,
+   "payout": 138017.07,
+   "pnl_gross": -64433.52,
+   "pnl_with_fee": -78463.47,
+   "roi_gross_pct": -31.8,
+   "supported_filled": 9328,
+   "supported_wins": 79,
+   "supported_pnl_with_fee": -78463.47
+  },
+  "P0.01_S25_L1|late(240-285s)": {
+   "entries": 8455,
+   "filled": 8047,
+   "unknown_size": 0,
+   "no_asks": 408,
+   "too_late": 0,
+   "wins": 57,
+   "win_rate_95pct_ci": [
+    0.55,
+    0.92
+   ],
+   "cost": 163108.44,
+   "payout": 113894.45,
+   "pnl_gross": -49213.99,
+   "pnl_with_fee": -60517.43,
+   "roi_gross_pct": -30.2,
+   "supported_filled": 8047,
+   "supported_wins": 57,
+   "supported_pnl_with_fee": -60517.43
+  },
+  "P0.01_S25_L3": {
+   "entries": 25062,
+   "filled": 18047,
+   "unknown_size": 3,
+   "no_asks": 1878,
+   "too_late": 5134,
+   "wins": 98,
+   "win_rate_95pct_ci": [
+    0.45,
+    0.66
+   ],
+   "cost": 392162.92,
+   "payout": 191691.33,
+   "pnl_gross": -200471.59,
+   "pnl_with_fee": -227648.71,
+   "roi_gross_pct": -51.1,
+   "supported_filled": 18047,
+   "supported_wins": 98,
+   "supported_pnl_with_fee": -227648.71
+  },
+  "P0.01_S25_L3|early(<240s)": {
+   "entries": 4194,
+   "filled": 3938,
+   "unknown_size": 0,
+   "no_asks": 256,
+   "too_late": 0,
+   "wins": 20,
+   "win_rate_95pct_ci": [
+    0.33,
+    0.78
+   ],
+   "cost": 86902.94,
+   "payout": 39165.5,
+   "pnl_gross": -47737.44,
+   "pnl_with_fee": -53759.84,
+   "roi_gross_pct": -54.9,
+   "supported_filled": 3938,
+   "supported_wins": 20,
+   "supported_pnl_with_fee": -53759.84
+  },
+  "P0.01_S25_L3|last15s": {
+   "entries": 12413,
+   "filled": 6174,
+   "unknown_size": 3,
+   "no_asks": 1102,
+   "too_late": 5134,
+   "wins": 25,
+   "win_rate_95pct_ci": [
+    0.27,
+    0.6
+   ],
+   "cost": 139483.47,
+   "payout": 44830.19,
+   "pnl_gross": -94653.28,
+   "pnl_with_fee": -104319.63,
+   "roi_gross_pct": -67.9,
+   "supported_filled": 6174,
+   "supported_wins": 25,
+   "supported_pnl_with_fee": -104319.63
+  },
+  "P0.01_S25_L3|late(240-285s)": {
+   "entries": 8455,
+   "filled": 7935,
+   "unknown_size": 0,
+   "no_asks": 520,
+   "too_late": 0,
+   "wins": 53,
+   "win_rate_95pct_ci": [
+    0.51,
+    0.87
+   ],
+   "cost": 165776.51,
+   "payout": 107695.64,
+   "pnl_gross": -58080.87,
+   "pnl_with_fee": -69569.24,
+   "roi_gross_pct": -35.0,
+   "supported_filled": 7935,
+   "supported_wins": 53,
+   "supported_pnl_with_fee": -69569.24
+  },
+  "P0.02_S100_L0": {
+   "entries": 25729,
+   "filled": 24660,
+   "unknown_size": 47,
+   "no_asks": 1022,
+   "too_late": 0,
+   "wins": 866,
+   "win_rate_95pct_ci": [
+    3.29,
+    3.75
+   ],
+   "cost": 87626.22,
+   "payout": 1056852.05,
+   "pnl_gross": 969225.83,
+   "pnl_with_fee": 963189.85,
+   "roi_gross_pct": 1106.1,
+   "supported_filled": 24660,
+   "supported_wins": 866,
+   "supported_pnl_with_fee": 963189.85
+  },
+  "P0.02_S100_L0.25": {
+   "entries": 25729,
+   "filled": 23804,
+   "unknown_size": 11,
+   "no_asks": 1777,
+   "too_late": 137,
+   "wins": 527,
+   "win_rate_95pct_ci": [
+    2.03,
+    2.41
+   ],
+   "cost": 388719.45,
+   "payout": 847628.77,
+   "pnl_gross": 458909.32,
+   "pnl_with_fee": 432192.56,
+   "roi_gross_pct": 118.1,
+   "supported_filled": 23804,
+   "supported_wins": 527,
+   "supported_pnl_with_fee": 432192.56
+  },
+  "P0.02_S100_L0.25|early(<240s)": {
+   "entries": 6951,
+   "filled": 6778,
+   "unknown_size": 0,
+   "no_asks": 173,
+   "too_late": 0,
+   "wins": 101,
+   "win_rate_95pct_ci": [
+    1.23,
+    1.81
+   ],
+   "cost": 127292.75,
+   "payout": 92599.59,
+   "pnl_gross": -34693.16,
+   "pnl_with_fee": -43426.35,
+   "roi_gross_pct": -27.3,
+   "supported_filled": 6778,
+   "supported_wins": 101,
+   "supported_pnl_with_fee": -43426.35
+  },
+  "P0.02_S100_L0.25|last15s": {
+   "entries": 9653,
+   "filled": 8152,
+   "unknown_size": 10,
+   "no_asks": 1354,
+   "too_late": 137,
+   "wins": 282,
+   "win_rate_95pct_ci": [
+    3.08,
+    3.88
+   ],
+   "cost": 121633.76,
+   "payout": 642910.5,
+   "pnl_gross": 521276.74,
+   "pnl_with_fee": 512886.01,
+   "roi_gross_pct": 428.6,
+   "supported_filled": 8152,
+   "supported_wins": 282,
+   "supported_pnl_with_fee": 512886.01
+  },
+  "P0.02_S100_L0.25|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8874,
+   "unknown_size": 1,
+   "no_asks": 250,
+   "too_late": 0,
+   "wins": 144,
+   "win_rate_95pct_ci": [
+    1.38,
+    1.91
+   ],
+   "cost": 139792.94,
+   "payout": 112118.68,
+   "pnl_gross": -27674.26,
+   "pnl_with_fee": -37267.1,
+   "roi_gross_pct": -19.8,
+   "supported_filled": 8874,
+   "supported_wins": 144,
+   "supported_pnl_with_fee": -37267.1
+  },
+  "P0.02_S100_L0.5": {
+   "entries": 25729,
+   "filled": 22764,
+   "unknown_size": 9,
+   "no_asks": 2590,
+   "too_late": 366,
+   "wins": 406,
+   "win_rate_95pct_ci": [
+    1.62,
+    1.96
+   ],
+   "cost": 443021.26,
+   "payout": 581137.77,
+   "pnl_gross": 138116.51,
+   "pnl_with_fee": 107654.2,
+   "roi_gross_pct": 31.2,
+   "supported_filled": 22764,
+   "supported_wins": 406,
+   "supported_pnl_with_fee": 107654.2
+  },
+  "P0.02_S100_L0.5|early(<240s)": {
+   "entries": 6951,
+   "filled": 6681,
+   "unknown_size": 2,
+   "no_asks": 268,
+   "too_late": 0,
+   "wins": 99,
+   "win_rate_95pct_ci": [
+    1.22,
+    1.8
+   ],
+   "cost": 144365.17,
+   "payout": 103612.15,
+   "pnl_gross": -40753.02,
+   "pnl_with_fee": -50658.0,
+   "roi_gross_pct": -28.2,
+   "supported_filled": 6681,
+   "supported_wins": 99,
+   "supported_pnl_with_fee": -50658.0
+  },
+  "P0.02_S100_L0.5|last15s": {
+   "entries": 9653,
+   "filled": 7441,
+   "unknown_size": 6,
+   "no_asks": 1840,
+   "too_late": 366,
+   "wins": 167,
+   "win_rate_95pct_ci": [
+    1.93,
+    2.61
+   ],
+   "cost": 145137.06,
+   "payout": 365329.93,
+   "pnl_gross": 220192.87,
+   "pnl_with_fee": 210172.06,
+   "roi_gross_pct": 151.7,
+   "supported_filled": 7441,
+   "supported_wins": 167,
+   "supported_pnl_with_fee": 210172.06
+  },
+  "P0.02_S100_L0.5|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8642,
+   "unknown_size": 1,
+   "no_asks": 482,
+   "too_late": 0,
+   "wins": 140,
+   "win_rate_95pct_ci": [
+    1.37,
+    1.91
+   ],
+   "cost": 153519.03,
+   "payout": 112195.69,
+   "pnl_gross": -41323.34,
+   "pnl_with_fee": -51859.85,
+   "roi_gross_pct": -26.9,
+   "supported_filled": 8642,
+   "supported_wins": 140,
+   "supported_pnl_with_fee": -51859.85
+  },
+  "P0.02_S100_L0|early(<240s)": {
+   "entries": 6951,
+   "filled": 6709,
+   "unknown_size": 20,
+   "no_asks": 222,
+   "too_late": 0,
+   "wins": 100,
+   "win_rate_95pct_ci": [
+    1.23,
+    1.81
+   ],
+   "cost": 18969.9,
+   "payout": 13443.28,
+   "pnl_gross": -5526.62,
+   "pnl_with_fee": -6828.3,
+   "roi_gross_pct": -29.1,
+   "supported_filled": 6709,
+   "supported_wins": 100,
+   "supported_pnl_with_fee": -6828.3
+  },
+  "P0.02_S100_L0|last15s": {
+   "entries": 9653,
+   "filled": 9159,
+   "unknown_size": 5,
+   "no_asks": 489,
+   "too_late": 0,
+   "wins": 624,
+   "win_rate_95pct_ci": [
+    6.31,
+    7.35
+   ],
+   "cost": 45292.57,
+   "payout": 1023086.92,
+   "pnl_gross": 977794.35,
+   "pnl_with_fee": 974664.36,
+   "roi_gross_pct": 2158.8,
+   "supported_filled": 9159,
+   "supported_wins": 624,
+   "supported_pnl_with_fee": 974664.36
+  },
+  "P0.02_S100_L0|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8792,
+   "unknown_size": 22,
+   "no_asks": 311,
+   "too_late": 0,
+   "wins": 142,
+   "win_rate_95pct_ci": [
+    1.37,
+    1.9
+   ],
+   "cost": 23363.75,
+   "payout": 20321.85,
+   "pnl_gross": -3041.9,
+   "pnl_with_fee": -4646.22,
+   "roi_gross_pct": -13.0,
+   "supported_filled": 8792,
+   "supported_wins": 142,
+   "supported_pnl_with_fee": -4646.22
+  },
+  "P0.02_S100_L1": {
+   "entries": 25729,
+   "filled": 21660,
+   "unknown_size": 8,
+   "no_asks": 3030,
+   "too_late": 1031,
+   "wins": 334,
+   "win_rate_95pct_ci": [
+    1.39,
+    1.71
+   ],
+   "cost": 523264.24,
+   "payout": 440704.98,
+   "pnl_gross": -82559.26,
+   "pnl_with_fee": -118570.01,
+   "roi_gross_pct": -15.8,
+   "supported_filled": 21660,
+   "supported_wins": 334,
+   "supported_pnl_with_fee": -118570.01
+  },
+  "P0.02_S100_L1|early(<240s)": {
+   "entries": 6951,
+   "filled": 6544,
+   "unknown_size": 0,
+   "no_asks": 407,
+   "too_late": 0,
+   "wins": 96,
+   "win_rate_95pct_ci": [
+    1.2,
+    1.79
+   ],
+   "cost": 162152.26,
+   "payout": 115189.27,
+   "pnl_gross": -46962.99,
+   "pnl_with_fee": -58090.52,
+   "roi_gross_pct": -29.0,
+   "supported_filled": 6544,
+   "supported_wins": 96,
+   "supported_pnl_with_fee": -58090.52
+  },
+  "P0.02_S100_L1|last15s": {
+   "entries": 9653,
+   "filled": 6734,
+   "unknown_size": 5,
+   "no_asks": 1883,
+   "too_late": 1031,
+   "wins": 109,
+   "win_rate_95pct_ci": [
+    1.34,
+    1.95
+   ],
+   "cost": 190293.64,
+   "payout": 214557.81,
+   "pnl_gross": 24264.17,
+   "pnl_with_fee": 11110.52,
+   "roi_gross_pct": 12.8,
+   "supported_filled": 6734,
+   "supported_wins": 109,
+   "supported_pnl_with_fee": 11110.52
+  },
+  "P0.02_S100_L1|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8382,
+   "unknown_size": 3,
+   "no_asks": 740,
+   "too_late": 0,
+   "wins": 129,
+   "win_rate_95pct_ci": [
+    1.3,
+    1.83
+   ],
+   "cost": 170818.35,
+   "payout": 110957.9,
+   "pnl_gross": -59860.45,
+   "pnl_with_fee": -71590.0,
+   "roi_gross_pct": -35.0,
+   "supported_filled": 8382,
+   "supported_wins": 129,
+   "supported_pnl_with_fee": -71590.0
+  },
+  "P0.02_S100_L3": {
+   "entries": 25729,
+   "filled": 19257,
+   "unknown_size": 3,
+   "no_asks": 3222,
+   "too_late": 3247,
+   "wins": 229,
+   "win_rate_95pct_ci": [
+    1.05,
+    1.35
+   ],
+   "cost": 672015.85,
+   "payout": 390824.76,
+   "pnl_gross": -281191.09,
+   "pnl_with_fee": -327510.1,
+   "roi_gross_pct": -41.8,
+   "supported_filled": 19257,
+   "supported_wins": 229,
+   "supported_pnl_with_fee": -327510.1
+  },
+  "P0.02_S100_L3|early(<240s)": {
+   "entries": 6951,
+   "filled": 6173,
+   "unknown_size": 2,
+   "no_asks": 776,
+   "too_late": 0,
+   "wins": 83,
+   "win_rate_95pct_ci": [
+    1.09,
+    1.66
+   ],
+   "cost": 189927.5,
+   "payout": 125361.61,
+   "pnl_gross": -64565.89,
+   "pnl_with_fee": -77611.4,
+   "roi_gross_pct": -34.0,
+   "supported_filled": 6173,
+   "supported_wins": 83,
+   "supported_pnl_with_fee": -77611.4
+  },
+  "P0.02_S100_L3|last15s": {
+   "entries": 9653,
+   "filled": 5057,
+   "unknown_size": 0,
+   "no_asks": 1349,
+   "too_late": 3247,
+   "wins": 41,
+   "win_rate_95pct_ci": [
+    0.6,
+    1.1
+   ],
+   "cost": 258211.16,
+   "payout": 114347.29,
+   "pnl_gross": -143863.87,
+   "pnl_with_fee": -161736.38,
+   "roi_gross_pct": -55.7,
+   "supported_filled": 5057,
+   "supported_wins": 41,
+   "supported_pnl_with_fee": -161736.38
+  },
+  "P0.02_S100_L3|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8027,
+   "unknown_size": 1,
+   "no_asks": 1097,
+   "too_late": 0,
+   "wins": 105,
+   "win_rate_95pct_ci": [
+    1.08,
+    1.58
+   ],
+   "cost": 223877.19,
+   "payout": 151115.86,
+   "pnl_gross": -72761.33,
+   "pnl_with_fee": -88162.32,
+   "roi_gross_pct": -32.5,
+   "supported_filled": 8027,
+   "supported_wins": 105,
+   "supported_pnl_with_fee": -88162.32
+  },
+  "P0.02_S25_L0": {
+   "entries": 25729,
+   "filled": 24660,
+   "unknown_size": 47,
+   "no_asks": 1022,
+   "too_late": 0,
+   "wins": 866,
+   "win_rate_95pct_ci": [
+    3.29,
+    3.75
+   ],
+   "cost": 66951.61,
+   "payout": 572944.61,
+   "pnl_gross": 505993.0,
+   "pnl_with_fee": 501386.82,
+   "roi_gross_pct": 755.8,
+   "supported_filled": 24660,
+   "supported_wins": 866,
+   "supported_pnl_with_fee": 501386.82
+  },
+  "P0.02_S25_L0.25": {
+   "entries": 25729,
+   "filled": 23804,
+   "unknown_size": 11,
+   "no_asks": 1777,
+   "too_late": 137,
+   "wins": 527,
+   "win_rate_95pct_ci": [
+    2.03,
+    2.41
+   ],
+   "cost": 301572.73,
+   "payout": 491667.01,
+   "pnl_gross": 190094.28,
+   "pnl_with_fee": 169385.31,
+   "roi_gross_pct": 63.0,
+   "supported_filled": 23804,
+   "supported_wins": 527,
+   "supported_pnl_with_fee": 169385.31
+  },
+  "P0.02_S25_L0.25|early(<240s)": {
+   "entries": 6951,
+   "filled": 6778,
+   "unknown_size": 0,
+   "no_asks": 173,
+   "too_late": 0,
+   "wins": 101,
+   "win_rate_95pct_ci": [
+    1.23,
+    1.81
+   ],
+   "cost": 105075.46,
+   "payout": 78703.42,
+   "pnl_gross": -26372.04,
+   "pnl_with_fee": -33580.64,
+   "roi_gross_pct": -25.1,
+   "supported_filled": 6778,
+   "supported_wins": 101,
+   "supported_pnl_with_fee": -33580.64
+  },
+  "P0.02_S25_L0.25|last15s": {
+   "entries": 9653,
+   "filled": 8152,
+   "unknown_size": 10,
+   "no_asks": 1354,
+   "too_late": 137,
+   "wins": 282,
+   "win_rate_95pct_ci": [
+    3.08,
+    3.88
+   ],
+   "cost": 76929.57,
+   "payout": 316997.94,
+   "pnl_gross": 240068.38,
+   "pnl_with_fee": 234771.71,
+   "roi_gross_pct": 312.1,
+   "supported_filled": 8152,
+   "supported_wins": 282,
+   "supported_pnl_with_fee": 234771.71
+  },
+  "P0.02_S25_L0.25|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8874,
+   "unknown_size": 1,
+   "no_asks": 250,
+   "too_late": 0,
+   "wins": 144,
+   "win_rate_95pct_ci": [
+    1.38,
+    1.91
+   ],
+   "cost": 119567.71,
+   "payout": 95965.65,
+   "pnl_gross": -23602.06,
+   "pnl_with_fee": -31805.76,
+   "roi_gross_pct": -19.7,
+   "supported_filled": 8874,
+   "supported_wins": 144,
+   "supported_pnl_with_fee": -31805.76
+  },
+  "P0.02_S25_L0.5": {
+   "entries": 25729,
+   "filled": 22764,
+   "unknown_size": 9,
+   "no_asks": 2590,
+   "too_late": 366,
+   "wins": 406,
+   "win_rate_95pct_ci": [
+    1.62,
+    1.96
+   ],
+   "cost": 318060.73,
+   "payout": 353176.48,
+   "pnl_gross": 35115.75,
+   "pnl_with_fee": 13268.9,
+   "roi_gross_pct": 11.0,
+   "supported_filled": 22764,
+   "supported_wins": 406,
+   "supported_pnl_with_fee": 13268.9
+  },
+  "P0.02_S25_L0.5|early(<240s)": {
+   "entries": 6951,
+   "filled": 6681,
+   "unknown_size": 2,
+   "no_asks": 268,
+   "too_late": 0,
+   "wins": 99,
+   "win_rate_95pct_ci": [
+    1.22,
+    1.8
+   ],
+   "cost": 112341.17,
+   "payout": 82950.1,
+   "pnl_gross": -29391.07,
+   "pnl_with_fee": -37098.44,
+   "roi_gross_pct": -26.2,
+   "supported_filled": 6681,
+   "supported_wins": 99,
+   "supported_pnl_with_fee": -37098.44
+  },
+  "P0.02_S25_L0.5|last15s": {
+   "entries": 9653,
+   "filled": 7441,
+   "unknown_size": 6,
+   "no_asks": 1840,
+   "too_late": 366,
+   "wins": 167,
+   "win_rate_95pct_ci": [
+    1.93,
+    2.61
+   ],
+   "cost": 81202.64,
+   "payout": 175733.21,
+   "pnl_gross": 94530.57,
+   "pnl_with_fee": 88935.33,
+   "roi_gross_pct": 116.4,
+   "supported_filled": 7441,
+   "supported_wins": 167,
+   "supported_pnl_with_fee": 88935.33
+  },
+  "P0.02_S25_L0.5|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8642,
+   "unknown_size": 1,
+   "no_asks": 482,
+   "too_late": 0,
+   "wins": 140,
+   "win_rate_95pct_ci": [
+    1.37,
+    1.91
+   ],
+   "cost": 124516.93,
+   "payout": 94493.17,
+   "pnl_gross": -30023.75,
+   "pnl_with_fee": -38568.0,
+   "roi_gross_pct": -24.1,
+   "supported_filled": 8642,
+   "supported_wins": 140,
+   "supported_pnl_with_fee": -38568.0
+  },
+  "P0.02_S25_L0|early(<240s)": {
+   "entries": 6951,
+   "filled": 6709,
+   "unknown_size": 20,
+   "no_asks": 222,
+   "too_late": 0,
+   "wins": 100,
+   "win_rate_95pct_ci": [
+    1.23,
+    1.81
+   ],
+   "cost": 16430.81,
+   "payout": 12794.98,
+   "pnl_gross": -3635.83,
+   "pnl_with_fee": -4763.16,
+   "roi_gross_pct": -22.1,
+   "supported_filled": 6709,
+   "supported_wins": 100,
+   "supported_pnl_with_fee": -4763.16
+  },
+  "P0.02_S25_L0|last15s": {
+   "entries": 9653,
+   "filled": 9159,
+   "unknown_size": 5,
+   "no_asks": 489,
+   "too_late": 0,
+   "wins": 624,
+   "win_rate_95pct_ci": [
+    6.31,
+    7.35
+   ],
+   "cost": 29514.47,
+   "payout": 541567.72,
+   "pnl_gross": 512053.25,
+   "pnl_with_fee": 510016.17,
+   "roi_gross_pct": 1734.9,
+   "supported_filled": 9159,
+   "supported_wins": 624,
+   "supported_pnl_with_fee": 510016.17
+  },
+  "P0.02_S25_L0|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8792,
+   "unknown_size": 22,
+   "no_asks": 311,
+   "too_late": 0,
+   "wins": 142,
+   "win_rate_95pct_ci": [
+    1.37,
+    1.9
+   ],
+   "cost": 21006.33,
+   "payout": 18581.91,
+   "pnl_gross": -2424.42,
+   "pnl_with_fee": -3866.2,
+   "roi_gross_pct": -11.5,
+   "supported_filled": 8792,
+   "supported_wins": 142,
+   "supported_pnl_with_fee": -3866.2
+  },
+  "P0.02_S25_L1": {
+   "entries": 25729,
+   "filled": 21660,
+   "unknown_size": 8,
+   "no_asks": 3030,
+   "too_late": 1031,
+   "wins": 334,
+   "win_rate_95pct_ci": [
+    1.39,
+    1.71
+   ],
+   "cost": 334766.02,
+   "payout": 296537.3,
+   "pnl_gross": -38228.71,
+   "pnl_with_fee": -61235.81,
+   "roi_gross_pct": -11.4,
+   "supported_filled": 21660,
+   "supported_wins": 334,
+   "supported_pnl_with_fee": -61235.81
+  },
+  "P0.02_S25_L1|early(<240s)": {
+   "entries": 6951,
+   "filled": 6544,
+   "unknown_size": 0,
+   "no_asks": 407,
+   "too_late": 0,
+   "wins": 96,
+   "win_rate_95pct_ci": [
+    1.2,
+    1.79
+   ],
+   "cost": 117133.96,
+   "payout": 85660.55,
+   "pnl_gross": -31473.41,
+   "pnl_with_fee": -39510.66,
+   "roi_gross_pct": -26.9,
+   "supported_filled": 6544,
+   "supported_wins": 96,
+   "supported_pnl_with_fee": -39510.66
+  },
+  "P0.02_S25_L1|last15s": {
+   "entries": 9653,
+   "filled": 6734,
+   "unknown_size": 5,
+   "no_asks": 1883,
+   "too_late": 1031,
+   "wins": 109,
+   "win_rate_95pct_ci": [
+    1.34,
+    1.95
+   ],
+   "cost": 88971.11,
+   "payout": 117486.47,
+   "pnl_gross": 28515.36,
+   "pnl_with_fee": 22376.65,
+   "roi_gross_pct": 32.1,
+   "supported_filled": 6734,
+   "supported_wins": 109,
+   "supported_pnl_with_fee": 22376.65
+  },
+  "P0.02_S25_L1|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8382,
+   "unknown_size": 3,
+   "no_asks": 740,
+   "too_late": 0,
+   "wins": 129,
+   "win_rate_95pct_ci": [
+    1.3,
+    1.83
+   ],
+   "cost": 128660.94,
+   "payout": 93390.29,
+   "pnl_gross": -35270.66,
+   "pnl_with_fee": -44101.8,
+   "roi_gross_pct": -27.4,
+   "supported_filled": 8382,
+   "supported_wins": 129,
+   "supported_pnl_with_fee": -44101.8
+  },
+  "P0.02_S25_L3": {
+   "entries": 25729,
+   "filled": 19257,
+   "unknown_size": 3,
+   "no_asks": 3222,
+   "too_late": 3247,
+   "wins": 229,
+   "win_rate_95pct_ci": [
+    1.05,
+    1.35
+   ],
+   "cost": 343859.17,
+   "payout": 234427.31,
+   "pnl_gross": -109431.86,
+   "pnl_with_fee": -133097.03,
+   "roi_gross_pct": -31.8,
+   "supported_filled": 19257,
+   "supported_wins": 229,
+   "supported_pnl_with_fee": -133097.03
+  },
+  "P0.02_S25_L3|early(<240s)": {
+   "entries": 6951,
+   "filled": 6173,
+   "unknown_size": 2,
+   "no_asks": 776,
+   "too_late": 0,
+   "wins": 83,
+   "win_rate_95pct_ci": [
+    1.09,
+    1.66
+   ],
+   "cost": 116359.68,
+   "payout": 83167.15,
+   "pnl_gross": -33192.54,
+   "pnl_with_fee": -41181.81,
+   "roi_gross_pct": -28.5,
+   "supported_filled": 6173,
+   "supported_wins": 83,
+   "supported_pnl_with_fee": -41181.81
+  },
+  "P0.02_S25_L3|last15s": {
+   "entries": 9653,
+   "filled": 5057,
+   "unknown_size": 0,
+   "no_asks": 1349,
+   "too_late": 3247,
+   "wins": 41,
+   "win_rate_95pct_ci": [
+    0.6,
+    1.1
+   ],
+   "cost": 92544.04,
+   "payout": 55357.13,
+   "pnl_gross": -37186.91,
+   "pnl_with_fee": -43587.1,
+   "roi_gross_pct": -40.2,
+   "supported_filled": 5057,
+   "supported_wins": 41,
+   "supported_pnl_with_fee": -43587.1
+  },
+  "P0.02_S25_L3|late(240-285s)": {
+   "entries": 9125,
+   "filled": 8027,
+   "unknown_size": 1,
+   "no_asks": 1097,
+   "too_late": 0,
+   "wins": 105,
+   "win_rate_95pct_ci": [
+    1.08,
+    1.58
+   ],
+   "cost": 134955.45,
+   "payout": 95903.04,
+   "pnl_gross": -39052.41,
+   "pnl_with_fee": -48328.13,
+   "roi_gross_pct": -28.9,
+   "supported_filled": 8027,
+   "supported_wins": 105,
+   "supported_pnl_with_fee": -48328.13
+  }
+ }
+}

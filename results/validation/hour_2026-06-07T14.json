@@ -1,0 +1,11 @@
+{
+ "hour": "2026-06-07T14",
+ "run_utc": "2026-10-16T13:32:03+00:00",
+ "errors": [
+  "Traceback (most recent call last):\n  File \"/home/runner/work/polymarket-btc-backtest/polymarket-btc-backtest/scripts/backtest.py\", line 350, in main\n    out[\"download_mb\"], out[\"download_reconnects\"] = download(hour, tmp, progress)\n                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/polymarket-btc-backtest/polymarket-btc-backtest/scripts/backtest.py\", line 270, in download\n    n, reconnects = fetch(f\"https://r2v2.pmxt.dev/polymarket_orderbook_{hour}.parquet\", path, progress)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/polymarket-btc-backtest/polymarket-btc-backtest/scripts/pmxt_fetch.py\", line 24, in fetch\n    raise RuntimeError(f\"download did not finish: {got} of {total} bytes in {limit_s} s, \"\nRuntimeError: download did not finish: 274661376 of 505091596 bytes in 900 s, 12 reconnects, last error: time limit\n"
+ ],
+ "windows_on_gamma": 12,
+ "windows_with_winner": 12,
+ "seconds_total": 930.7,
+ "peak_mem_mb": 32.8
+}
